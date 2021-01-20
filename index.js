@@ -1,6 +1,7 @@
-function B(name,age){
-    console.log(name,age);
+function B(){
+    this.hello =function(){
+        console.log('hello');
+    }
 }
-const b = new B();
-const c = new B("Mark",12);
-console.log(B());
+
+new B().hello();
