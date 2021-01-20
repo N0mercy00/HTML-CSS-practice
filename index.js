@@ -1,7 +1,10 @@
-function B(){
-    this.hello =function(){
-        console.log('hello');
-    }
+function Person(name,age){
+    this.name=name;
+    this.age=age;
 }
+Person.prototype.type='human';
 
-new B().hello();
+const Alice = new Person();
+const Bob = new Person();
+
+console.log(Alice.type, Bob.type);
